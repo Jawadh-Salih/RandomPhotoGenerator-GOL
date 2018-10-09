@@ -100,12 +100,14 @@
                                     </ul>
                                 </li>
                                 <li class="has_sub">
-                                    <a href="javascript:void(0);" onclick="exportimg();" class="waves-effect">
+                                    <!-- A modal should be loaded.  -->
+                                    <a data-toggle="modal" data-target="#paymentModal" class="waves-effect">
                                         <i class="fa fa-save"></i> 
                                         <span> Export/Save </span>
                                     </a>
                                 </li>
-
+                                
+                                
 
                             <?php require_once('php/left_sidebar.php'); ?>
 
@@ -132,7 +134,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div id="canvas-placeholder" class="col-md-8" style="max-width: 100%; max-height: 100%; overflow:auto; min-height: 250px;">
-                                   <canvas id="canvas" style=" padding: 10px;"></canvas>          
+                                   <!-- <canvas id="canvas" style=" padding: 10px;"></canvas>           -->
                                 </div>
                             </div>
                         </div>
@@ -153,6 +155,24 @@
             </div>
 
 
+        </div>
+
+        <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pay before you export the Image</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <button class="btn btn-primary">PayPal</button>
+
+                </div>
+                
+                </div>
+            </div>
         </div>
         <!-- END wrapper -->
 

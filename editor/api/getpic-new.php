@@ -5,7 +5,7 @@ require_once 'zebra-image/Zebra_Image.php';
 $tmpfname = tempnam("./tmp", "FOO");
 
 $handle = fopen($tmpfname, "w");
-fwrite($handle, file_get_contents("http://gridoflegends.com/editor/api/getpic.php?rand=".rand())); //absolute url!!!
+fwrite($handle, file_get_contents("https://source.unsplash.com/random?sig=".rand())); //absolute url!!!
 fclose($handle);
 processImage($tmpfname);
 unlink($tmpfname);
