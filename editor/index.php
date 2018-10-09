@@ -134,7 +134,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div id="canvas-placeholder" class="col-md-8" style="max-width: 100%; max-height: 100%; overflow:auto; min-height: 250px;">
-                                   <!-- <canvas id="canvas" style=" padding: 10px;"></canvas>           -->
+                                   <canvas id="canvas" style=" padding: 10px;"></canvas>          
                                 </div>
                             </div>
                         </div>
